@@ -10,7 +10,7 @@ if [ -f "$topdir/_config.sh" ]; then
   . "$topdir/_config.sh"
 fi
 
-site_title=${site_title:-"My Awesome Photos"}
+site_title=${site_title:-"trolleway"}
 
 theme_dir=${theme_dir:-"theme1"}
 
