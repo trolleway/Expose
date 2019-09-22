@@ -88,7 +88,7 @@ while getopts ":d" opt; do
 		echo "Draft mode On"
 		draft=true
 		# for a quick draft, use lowest resolution, fastest encode rates etc.
-		resolution=(1024)
+		resolution=(640)
 		bitrate=(4)
 		video_formats=(h264)
 		download_button=false
@@ -106,6 +106,9 @@ then
 else
 	echo "FFmpeg not found, videos will not be processed"
 fi
+
+video_enabled=false
+echo "Video processing switched off"
 
 if [ "$autorotate" = true ]
 then
