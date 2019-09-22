@@ -667,3 +667,7 @@ display: inline-block;
 height: 10px;
 min-width: 1px;
 }
+
+div.foreground{
+overflow-y: scroll;
+}
