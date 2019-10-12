@@ -670,4 +670,5 @@ min-width: 1px;
 
 div.foreground{
 overflow-y: scroll;
+height: 80%
 }
