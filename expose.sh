@@ -300,6 +300,7 @@ printf "\n"
 
 # read in each file to populate $gallery variables
 counter=0
+total=$(find . -type f | wc -l)
 for i in "${!paths[@]}"
 do
 	nav_count[i]=-1
@@ -322,7 +323,7 @@ do
 	do
 		
 		counter=$((counter + 1))
-		echo -ne "$counter"'\r'
+		echo -ne "$counter / $total"'\r'
 
 		
 		filename=$(basename "$file")
