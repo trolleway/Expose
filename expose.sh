@@ -321,7 +321,7 @@ do
 	do
 		
 		counter=$((counter + 1))
-		echo -ne "$counter"
+		echo -ne echo -ne "$counter"'\r'
 
 		
 		filename=$(basename "$file")
