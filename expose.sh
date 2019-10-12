@@ -322,7 +322,7 @@ do
 		
 		counter=$((counter + 1))
 		#printf "."
-		echo -ne "\033[2K $counter"
+		echo -ne "\033[2K$counter"
 		#echo -n $counter
 		
 		filename=$(basename "$file")
