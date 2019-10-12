@@ -296,6 +296,7 @@ do
 done
 
 printf "\nReading files"
+printf "\n"
 
 # read in each file to populate $gallery variables
 counter=0
@@ -321,7 +322,7 @@ do
 	do
 		
 		counter=$((counter + 1))
-		echo -ne echo -ne "$counter"'\r'
+		echo -ne "$counter"'\r'
 
 		
 		filename=$(basename "$file")
