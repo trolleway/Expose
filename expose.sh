@@ -313,12 +313,15 @@ do
 	mkdir -p "$topdir"/_site/"$url"
 
 	index=0
+	counter=0
 	
 	# loop over found files
 	while read file
 	do
 		
-		printf "."
+		counter=$((counter + 1))
+		#printf "."
+		echo -ne $counter
 		
 		filename=$(basename "$file")
 		filedir=$(dirname "$file")
