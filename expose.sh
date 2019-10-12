@@ -298,6 +298,7 @@ done
 printf "\nReading files"
 
 # read in each file to populate $gallery variables
+counter=0
 for i in "${!paths[@]}"
 do
 	nav_count[i]=-1
@@ -313,7 +314,7 @@ do
 	mkdir -p "$topdir"/_site/"$url"
 
 	index=0
-	counter=0
+	
 	
 	# loop over found files
 	while read file
@@ -322,7 +323,7 @@ do
 		counter=$((counter + 1))
 		#printf "."
 		echo -e "\033[2K"
-		echo $counter
+		echo -n $counter
 		
 		filename=$(basename "$file")
 		filedir=$(dirname "$file")
